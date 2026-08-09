@@ -13,4 +13,4 @@ services:
       HTTPS_PORT: ${POSTE_HTTPS_PORT:-3231}
 
     volumes:
-      - ${POSTE_DATA_PATH:-/opt/poste/data}:/data
+      - ${POSTE_DATA_PATH:-/opt/LunarWaveEmail/poste/data}:/data
