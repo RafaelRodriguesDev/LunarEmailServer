@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-POSTE_DATA_PATH="${POSTE_DATA_PATH:-/opt/poste/data}"
-POSTE_BACKUP_PATH="${POSTE_BACKUP_PATH:-/opt/poste/backups}"
+POSTE_DATA_PATH="${POSTE_DATA_PATH:-/opt/LunarWaveEmail/poste/data}"
+POSTE_BACKUP_PATH="${POSTE_BACKUP_PATH:-/opt/LunarWaveEmail/poste/backups}"
 TIMESTAMP="$(date +'%Y%m%d_%H%M%S')"
 BACKUP_FILE="${POSTE_BACKUP_PATH}/poste_${TIMESTAMP}.tar.gz"
 
