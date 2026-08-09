@@ -40,7 +40,7 @@ As portas de e-mail continuam diretamente na VPS:
    - `POSTE_HOSTNAME=mail.seudominio.com.br`
    - `POSTE_HTTP_PORT=3230`
    - `POSTE_HTTPS_PORT=3231`
-   - `POSTE_DATA_PATH=/opt/poste/data`
+   - `POSTE_DATA_PATH=/opt/LunarWaveEmail/poste/data`
    - `TZ=America/Sao_Paulo`
 
 6. Clique em `Deploy the stack`.
@@ -98,7 +98,7 @@ Se usar POP3/Sieve, abra tambem as portas correspondentes.
 Todos os dados ficam, por padrao, em:
 
 ```text
-/opt/poste/data
+/opt/LunarWaveEmail/poste/data
 ```
 
 Esse diretorio contem configuracoes, usuarios, mensagens, banco e logs. Nunca apague esse volume ao atualizar o container.
@@ -106,13 +106,13 @@ Esse diretorio contem configuracoes, usuarios, mensagens, banco e logs. Nunca ap
 ## Backup
 
 ```bash
-sudo POSTE_DATA_PATH=/opt/poste/data ./scripts/backup.sh
+sudo POSTE_DATA_PATH=/opt/LunarWaveEmail/poste/data ./scripts/backup.sh
 ```
 
 Por padrao os backups sao gravados em:
 
 ```text
-/opt/poste/backups
+/opt/LunarWaveEmail/poste/backups
 ```
 
 ## Atualizacao
